@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-light: #f4f4f4;
+    --color-gray-700: #333333;
+    --color-gray-800: #1f1f1f;
+    --color-gray-900: #141414;
+    --color-green-300: #c5f82a;
+
+    --radius-circle: 100%
+}
+
+body {
+    background-color: var(--color-gray-900);
+    font-family: "Urbanist", sans-serif;
+}
+
+div {
+    background-color: var(--color-gray-800);
+    color: var(--color-light);
+    text-align: center;
+    width: 40%;
+    min-width: 400px;
+    /* margin: 20px 40px 60px; */
+    /* margin-right: 50px; */
+    margin-block: 30px;
+    margin-inline: auto;
+    /* margin: 30px auto; */
+    padding-block: 30px;
+    border-radius: 20px;
+}
+
+img {
+    height: 180px;
+    border-radius: var(--radius-circle);
+    object-fit: cover;
+    border: 5px solid var(--color-light);
+    transition: .8s;
+
+    &:hover {
+        border-color: var(--color-green-300);
+        scale: 1.2;
+    }
+
+}
+
+
+h1 {
+    font-size: xx-large;
+    color: var(--color-green-300);
+    margin-block: 10px;
+
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    width: 70%;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-wrap: balance;
+
+
+}
+
+ul,
+ol {
+    list-style: none;
+
+
+}
+
+
+li {
+    background-color: var(--color-gray-700);
+    margin-block: 16px;
+    margin-inline: auto;
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+a {
+    padding-block: 16px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: var(--color-green-300);
+    color: var(--color-gray-900);
+    letter-spacing: 2px;
+}
